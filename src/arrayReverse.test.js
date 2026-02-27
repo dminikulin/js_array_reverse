@@ -35,4 +35,8 @@ describe(`Function 'arrayReverse':`, () => {
     expect(arrayReverse(['I', 'am', 'a', 'student!']))
       .toEqual(['!', 'tn', 'e', 'dutsamaI']);
   });
+
+  it('should return an empty array if original array is empty', () => {
+    expect(arrayReverse([])).toEqual([]);
+  });
 });
